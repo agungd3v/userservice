@@ -1,3 +1,5 @@
+const user = require('../models/User')
+
 const UserController = {
   addToCart: (req, res) => {
     const { product, userid } = req.body
