@@ -1,6 +1,6 @@
 const db = require('mongoose')
 
-const userSchema = db.Schema({
+let userSchema = db.Schema({
   name: {
     type: String,
     default: null
