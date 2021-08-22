@@ -15,7 +15,15 @@ const UserController = {
         cart.push(product)
         scss.carts = cart
         scss.save()
-        return res.json({status: true, message: scss})
+        return res.json({
+          status: true,
+          message: {
+            name: scss.name,
+            username: scss.username,
+            email: scss.email,
+            carts: scss.carts
+          }
+        })
       })
     } catch (error) {
       return res.json({
