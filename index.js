@@ -12,6 +12,6 @@ db.connect(process.env.DB_HOST, { useNewUrlParser: true, useUnifiedTopology: tru
 const route = require('./routes')
 
 app.use(route)
-app.listen(4002, () => {
-  console.log('server ready at port 4002')
+app.listen(4003, () => {
+  console.log('server ready at port 4003')
 })
